@@ -3,6 +3,12 @@ import chicken_wings from "./chicken_wings.jpg";
 export default function initial() {
   const container = document.querySelector("#content");
 
+  if (container.children.length > 0) {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    } // removes all child nodes
+  }
+
   // Creating and appending the header element
   const header = document.createElement("h1");
   header.textContent = "Eugene's Marvelous Chicken Wings";
