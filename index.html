@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Trucking Company</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="src/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex justify-between items-center px-2 text-2xl">
+        <p>Logo</p>
+        <ul class="hidden md:flex autoMarginLeft">
+          <a href="">
+            <li>Home</li>
+          </a>
+          <a href="">
+            <li>About Us</li>
+          </a>
+          <a href="">
+            <li>Services</li>
+          </a>
+          <a href="">
+            <li>Contact Us</li>
+          </a>
+        </ul>
+
+        <div class="flex w-8 h-4 md:hidden flex-col justify-between">
+          <span class="bg-white h-0.5 w-full"></span
+          ><span class="bg-white h-0.5 w-full"></span
+          ><span class="bg-white h-0.5 w-full"></span>
+        </div>
+      </nav>
+      <ul class="hidden md:hidden">
+        <a href="">
+          <li class="text-center">Home</li>
+        </a>
+        <a href="">
+          <li class="text-center">About Us</li>
+        </a>
+        <a class="" href="">
+          <li class="text-center">Services</li>
+        </a>
+        <a href="">
+          <li class="text-center">Contact Us</li>
+        </a>
+      </ul>
+    </header>
+
+    <section class="flex centered h-screen">
+      <div class="heroContent flex column centered">
+        <img
+          src="Assets/Avatar Photo.jpg"
+          alt="Avatar Photo"
+          class="rounded-full max-w-64"
+        />
+
+        <h1 class="text-3xl font-semibold md:text-6xl md:font-bold">
+          Hi. I'm <strong>Eugene Clark</strong>.
+        </h1>
+        <a class="seventyFiveWidth max-w-32 md:max-w-96"
+          ><button class="noFill button lightBorder">Contact Us</button></a
+        >
+      </div>
+    </section>
+
+    <section class="darkBackground flex centered p-12">
+      <div class="flex column centered spacEvenly minWidth50">
+        <h2 class="my-6">Our Services</h2>
+        <section class="flex flex-col spacEvenly minWidth75 space">
+          <div class="service flex column centered spacEvenly">
+            <img src="https://placehold.co/100x100/png" alt="Service 1" />
+            <h3>Service 1</h3>
+          </div>
+          <div class="service flex column centered spacEvenly">
+            <img src="https://placehold.co/100x100/png" alt="Service 2" />
+            <h3>Service 2</h3>
+          </div>
+          <div class="service flex column centered spacEvenly">
+            <img src="https://placehold.co/100x100/png" alt="Service 3" />
+            <h3>Service 3</h3>
+          </div>
+        </section>
+        <a class="thirtyFiveWidth"
+          ><button class="noFill button lightBorder">See More</button></a
+        >
+      </div>
+    </section>
+
+    <section class="lightBackground flex centered">
+      <div
+        class="flex column spacEvenly seventyFiveWidth height centeredText text-base"
+      >
+        <h2 class="text-3xl">About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam natus
+          nihil molestiae, voluptatum perferendis sunt magnam perspiciatis et
+          praesentium assumenda sit explicabo, maiores nesciunt, commodi
+          adipisci accusantium. Odio, explicabo repudiandae. Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Eaque suscipit consequuntur
+          eius ut architecto? Laborum mollitia voluptates quisquam itaque
+          quibusdam dolor necessitatibus asperiores labore qui! Architecto
+          consequuntur earum ipsa fuga! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Alias cumque ducimus dolore, maxime obcaecati itaque
+          quia vero provident ullam deleniti beatae quaerat quo dolorem maiores
+          molestiae totam quis tenetur amet.
+        </p>
+      </div>
+    </section>
+
+    <section class="darkBackground flex column centered">
+      <h2>Contact Us</h2>
+
+      <form action="#" method="POST" class="flex column seventyFiveWidth h-96">
+        <p>
+          <input type="text" id="name" name="user_name" placeholder="Name" />
+        </p>
+        <p>
+          <input type="email" id="mail" name="user_email" placeholder="Email" />
+        </p>
+        <p>
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Message"
+          ></textarea>
+        </p>
+
+        <a class="thirtyFiveWidth marginCentered"
+          ><button class="noFill button lightBorder">Submit</button></a
+        >
+      </form>
+    </section>
+    <footer class="bg-black flex justify-between">
+      <div class="border-solid border-white border-4">Hello</div>
+      <div class="border-solid border-white border-4">Hi</div>
+      <div class="border-solid border-white border-4">Hola</div>
+    </footer>
+  </body>
+</html>
