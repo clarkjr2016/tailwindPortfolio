@@ -56,26 +56,39 @@
       </ul>
     </header>
 
-    <section class="flex centered h-screen">
-      <div class="heroContent flex column centered">
+    <section class="flex justify-center items-center h-dvh">
+      <div
+        class="heroContent flex flex-col lg:flex-row lg:justify-between centered gap-y-4"
+      >
         <img
           src="Assets/Avatar Photo.jpg"
           alt="Avatar Photo"
-          class="rounded-full max-w-64"
+          class="rounded-full max-w-32"
         />
+        <div class="flex flex-col gap-y-4">
+          <div class="flex flex-col text-center max-w-max gap-y-4">
+            <h1 class="text-2xl font-semibold md:text-6xl md:font-bold">
+              Hi. I'm <strong>Eugene Clark</strong>.
+            </h1>
+            <p class="text-sm">
+              I build websites and website applications that enhance brands'
+              online presence, driving increased customer traffic and
+              engagement.
+            </p>
+          </div>
 
-        <h1 class="text-3xl font-semibold md:text-6xl md:font-bold">
-          Hi. I'm <strong>Eugene Clark</strong>.
-        </h1>
-        <a class="seventyFiveWidth max-w-32 md:max-w-96"
-          ><button class="noFill button lightBorder">Contact Us</button></a
-        >
+          <a class="max-w-24 md:max-w-96 mx-auto"
+            ><button class="noFill lightBorder text-base rounded-2xl px-2">
+              Contact Us
+            </button></a
+          >
+        </div>
       </div>
     </section>
 
     <section class="darkBackground flex centered p-12">
       <div class="flex column centered spacEvenly minWidth50">
-        <h2 class="my-6">Our Services</h2>
+        <h2 class="my-6 text-center">Our Services</h2>
         <section class="flex flex-col spacEvenly minWidth75 space">
           <div class="service flex column centered spacEvenly">
             <img src="https://placehold.co/100x100/png" alt="Service 1" />
