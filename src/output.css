@@ -564,6 +564,27 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -584,18 +605,6 @@ video {
   height: 24rem;
 }
 
-.h-dvh {
-  height: 100dvh;
-}
-
-.h-lvh {
-  height: 100lvh;
-}
-
-.max-h-full {
-  max-height: 100%;
-}
-
 .min-h-full {
   min-height: 100%;
 }
@@ -612,18 +621,6 @@ video {
   width: 100%;
 }
 
-.min-w-10 {
-  min-width: 2.5rem;
-}
-
-.min-w-40 {
-  min-width: 10rem;
-}
-
-.min-w-60 {
-  min-width: 15rem;
-}
-
 .min-w-48 {
   min-width: 12rem;
 }
@@ -632,12 +629,8 @@ video {
   min-width: 100%;
 }
 
-.max-w-24 {
-  max-width: 6rem;
-}
-
-.max-w-32 {
-  max-width: 8rem;
+.max-w-40 {
+  max-width: 10rem;
 }
 
 .max-w-96 {
@@ -649,20 +642,8 @@ video {
   max-width: max-content;
 }
 
-.max-w-52 {
-  max-width: 13rem;
-}
-
-.max-w-64 {
-  max-width: 16rem;
-}
-
-.max-w-40 {
-  max-width: 10rem;
-}
-
-.max-w-48 {
-  max-width: 12rem;
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -705,6 +686,11 @@ video {
   border-style: solid;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -720,26 +706,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-12 {
-  padding: 3rem;
-}
-
 .p-10 {
   padding: 2.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-12 {
+  padding: 3rem;
 }
 
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .text-center {
@@ -761,9 +738,9 @@ video {
   line-height: 1.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-6xl {
@@ -771,12 +748,32 @@ video {
   line-height: 1;
 }
 
-.font-semibold {
-  font-weight: 600;
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 /*
@@ -1035,21 +1032,11 @@ textarea {
   margin: 0 auto;
 }
 
-@media (min-width: 480px) {
-  .sm\:max-w-32 {
-    max-width: 8rem;
-  }
-
-  .sm\:max-w-40 {
-    max-width: 10rem;
-  }
-
-  .sm\:max-w-36 {
-    max-width: 9rem;
-  }
-}
-
 @media (min-width: 768px) {
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1062,38 +1049,12 @@ textarea {
     min-width: 9rem;
   }
 
-  .md\:max-w-64 {
-    max-width: 16rem;
-  }
-
-  .md\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .md\:max-w-60 {
-    max-width: 15rem;
-  }
-
   .md\:max-w-48 {
     max-width: 12rem;
   }
 
-  .md\:max-w-36 {
-    max-width: 9rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .md\:max-w-md {
+    max-width: 28rem;
   }
 
   .md\:text-4xl {
@@ -1101,8 +1062,9 @@ textarea {
     line-height: 2.5rem;
   }
 
-  .md\:font-bold {
-    font-weight: 700;
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -1117,64 +1079,24 @@ textarea {
     margin-right: 2.5rem;
   }
 
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
-  .lg\:min-h-screen {
-    min-height: 100vh;
-  }
-
-  .lg\:min-w-36 {
-    min-width: 9rem;
-  }
-
-  .lg\:min-w-20 {
-    min-width: 5rem;
-  }
-
-  .lg\:max-w-full {
-    max-width: 100%;
-  }
-
-  .lg\:max-w-64 {
-    max-width: 16rem;
-  }
-
-  .lg\:max-w-20 {
-    max-width: 5rem;
+  .lg\:mb-32 {
+    margin-bottom: 8rem;
   }
 
   .lg\:max-w-24 {
     max-width: 6rem;
   }
 
-  .lg\:max-w-96 {
-    max-width: 24rem;
-  }
-
-  .lg\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .lg\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .lg\:max-w-3xl {
-    max-width: 48rem;
-  }
-
-  .lg\:max-w-6xl {
-    max-width: 72rem;
-  }
-
-  .lg\:max-w-4xl {
-    max-width: 56rem;
-  }
-
   .lg\:max-w-5xl {
     max-width: 64rem;
+  }
+
+  .lg\:max-w-64 {
+    max-width: 16rem;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:flex-row {
@@ -1195,6 +1117,11 @@ textarea {
 
   .lg\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 }
