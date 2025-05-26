@@ -554,13 +554,27 @@ video {
   display: none;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -587,12 +601,12 @@ video {
   height: 1rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-auto {
   height: auto;
+}
+
+.min-h-80 {
+  min-height: 20rem;
 }
 
 .min-h-full {
@@ -603,24 +617,8 @@ video {
   min-height: 100vh;
 }
 
-.min-h-32 {
-  min-height: 8rem;
-}
-
-.min-h-64 {
-  min-height: 16rem;
-}
-
-.min-h-44 {
-  min-height: 11rem;
-}
-
-.min-h-96 {
-  min-height: 24rem;
-}
-
-.min-h-80 {
-  min-height: 20rem;
+.min-h-8 {
+  min-height: 2rem;
 }
 
 .w-8 {
@@ -639,10 +637,6 @@ video {
   min-width: 100%;
 }
 
-.min-w-60 {
-  min-width: 15rem;
-}
-
 .max-w-40 {
   max-width: 10rem;
 }
@@ -651,25 +645,13 @@ video {
   max-width: 24rem;
 }
 
-.max-w-max {
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-
-.max-w-24 {
-  max-width: 6rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
 
-.max-w-64 {
-  max-width: 16rem;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-1 {
@@ -692,24 +674,24 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .gap-y-4 {
   row-gap: 1rem;
 }
 
-.gap-y-6 {
-  row-gap: 1.5rem;
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
-.gap-y-10 {
-  row-gap: 2.5rem;
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .rounded-2xl {
@@ -720,12 +702,20 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .border-4 {
   border-width: 4px;
 }
 
 .border-8 {
   border-width: 8px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-solid {
@@ -740,6 +730,11 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -764,9 +759,34 @@ video {
   padding: 1.5rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-center {
@@ -788,19 +808,14 @@ video {
   line-height: 2.5rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -920,7 +935,7 @@ nav li {
   margin: 0 10px;
 }
 
-.flex {
+/* .flex {
   display: flex;
 }
 
@@ -955,6 +970,7 @@ nav li {
 }
 
 .button {
+  font-size: 1.2rem;
   border-radius: 2rem;
   display: block;
   width: 100%;
@@ -1050,12 +1066,6 @@ form {
   justify-content: space-evenly;
 }
 
-form input {
-  margin: 0 auto 0 0;
-  display: block;
-  width: 100%;
-}
-
 form p {
   display: flex;
 }
@@ -1066,9 +1076,14 @@ textarea {
 
 .marginCentered {
   margin: 0 auto;
-}
+} */
 
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1089,6 +1104,36 @@ textarea {
     max-width: 28rem;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-y-8 {
+    row-gap: 2rem;
+  }
+
+  .md\:gap-y-6 {
+    row-gap: 1.5rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1099,19 +1144,9 @@ textarea {
     line-height: 1;
   }
 
-  .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-lg {
@@ -1131,24 +1166,8 @@ textarea {
     margin-right: 2.5rem;
   }
 
-  .lg\:mb-32 {
-    margin-bottom: 8rem;
-  }
-
-  .lg\:mb-40 {
-    margin-bottom: 10rem;
-  }
-
   .lg\:mb-24 {
     margin-bottom: 6rem;
-  }
-
-  .lg\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
-  .lg\:min-h-96 {
-    min-height: 24rem;
   }
 
   .lg\:min-h-\[30rem\] {
@@ -1183,8 +1202,9 @@ textarea {
     justify-content: space-between;
   }
 
-  .lg\:gap-y-\[40px\] {
-    row-gap: 40px;
+  .lg\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .lg\:gap-x-\[40px\] {
@@ -1192,17 +1212,23 @@ textarea {
          column-gap: 40px;
   }
 
-  .lg\:gap-x-10 {
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-  }
-
-  .lg\:p-5 {
-    padding: 1.25rem;
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-6xl {
@@ -1213,20 +1239,5 @@ textarea {
   .lg\:text-8xl {
     font-size: 6rem;
     line-height: 1;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
