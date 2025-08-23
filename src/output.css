@@ -888,15 +888,6 @@ h6 {
   isolation: isolate;
 }
 
-a {
-  text-decoration: none;
-  color: var(--lightText);
-}
-
-a:hover {
-  color: var(--brightColor);
-}
-
 h2 {
   font-size: 1.5rem;
 }
@@ -1075,10 +1066,6 @@ textarea {
 
   .md\:max-w-md {
     max-width: 28rem;
-  }
-
-  .md\:cursor-pointer {
-    cursor: pointer;
   }
 
   .md\:flex-row {

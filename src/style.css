@@ -78,15 +78,6 @@ h6 {
   isolation: isolate;
 }
 
-a {
-  text-decoration: none;
-  color: var(--lightText);
-}
-
-a:hover {
-  color: var(--brightColor);
-}
-
 h2 {
   font-size: 1.5rem;
 }
