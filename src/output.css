@@ -564,6 +564,11 @@ video {
   margin-right: auto;
 }
 
+.my-52 {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -636,6 +641,10 @@ video {
   min-width: 12rem;
 }
 
+.min-w-72 {
+  min-width: 18rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -659,6 +668,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .cursor-pointer {
