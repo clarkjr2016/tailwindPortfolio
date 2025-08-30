@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Eugene Clark's Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="output.css" />
-    <link rel="icon" type="image/png" href="../Assets/ecLogoTransparent.png" />
-    <script src="script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/7316186bcb.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-  </head>
+	<head>
+		<title>Eugene Clark's Portfolio</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="output.css" />
+		<link rel="icon" type="image/png" href="../Assets/ecLogoTransparent.png" />
+		<script src="script.js" defer></script>
+		<script
+			src="https://kit.fontawesome.com/7316186bcb.js"
+			crossorigin="anonymous"
+			defer
+		></script>
+	</head>
 
-  <body>
-    <header>
-      <nav class="flex justify-between items-center px-2 text-2xl text-white">
-        <p>ECJ</p>
-        <ul class="hidden md:flex autoMarginLeft">
-          <a href="../index.html#home">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About</li>
-          </a>
-          <a href="../index.html#services">
-            <li>Services</li>
-          </a>
-          <a href="../index.html#contact">
-            <li>Contact</li>
-          </a>
-        </ul>
+	<body>
+		<header>
+			<nav class="flex justify-between items-center px-2 text-2xl text-white">
+				<p>ECJ</p>
+				<ul class="hidden md:flex autoMarginLeft">
+					<a href="../index.html#home">
+						<li>Home</li>
+					</a>
+					<a href="#about">
+						<li>About</li>
+					</a>
+					<a href="../index.html#services">
+						<li>Services</li>
+					</a>
+					<a href="../index.html#contact">
+						<li>Contact</li>
+					</a>
+				</ul>
 
-        <div
-          class="flex w-8 h-4 md:hidden flex-col justify-between cursor-pointer"
-        >
-          <span class="bg-white h-0.5 w-full"></span
-          ><span class="bg-white h-0.5 w-full"></span
-          ><span class="bg-white h-0.5 w-full"></span>
-        </div>
-      </nav>
-      <ul class="hidden md:hidden text-white cursor-pointer text-2xl">
-        <a href="../index.html#home">
-          <li class="text-center">Home</li>
-        </a>
-        <a href="">
-          <li class="text-center">About</li>
-        </a>
-        <a class="" href="../index.html#services">
-          <li class="text-center">Services</li>
-        </a>
-        <a href="../index.html#contact">
-          <li class="text-center">Contact</li>
-        </a>
-      </ul>
-    </header>
-    <section class="flex flex-col p-12 md:flex-row">
-      <div>
-        <img
-          src="../Assets/Picture of me.png"
-          alt="Picture of Eugene Clark"
-          class="max-w-72 mx-auto rounded-md"
-        />
-      </div>
-      <div class = "flex flex-col items-center">
-        <h1 class="text-center text-4xl font-bold my-12">About Me</h1>
+				<div
+					class="flex w-8 h-4 md:hidden flex-col justify-between cursor-pointer"
+				>
+					<span class="bg-white h-0.5 w-full"></span
+					><span class="bg-white h-0.5 w-full"></span
+					><span class="bg-white h-0.5 w-full"></span>
+				</div>
+			</nav>
+			<ul class="hidden md:hidden text-white cursor-pointer text-2xl">
+				<a href="../index.html#home">
+					<li class="text-center">Home</li>
+				</a>
+				<a href="">
+					<li class="text-center">About</li>
+				</a>
+				<a class="" href="../index.html#services">
+					<li class="text-center">Services</li>
+				</a>
+				<a href="../index.html#contact">
+					<li class="text-center">Contact</li>
+				</a>
+			</ul>
+		</header>
+		<section class="flex flex-col p-12 md:flex-row md:gap-x-12">
+			<div>
+				<img
+					src="../Assets/Picture of me.png"
+					alt="Picture of Eugene Clark"
+					class="max-w-72 mx-auto rounded-md"
+				/>
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:justify-start items-center md:items-start">
+					<h1
+						class="text-center md:text-left text-4xl md:text-8xl font-bold my-12 md:mt-0"
+					>
+						About Me
+					</h1>
 
-        <p class = "max-w-sm min-w-72">
-          I'm a Web Developer with a strong passion to help other businesses
-          reach their target audience. I seek to provide the digital solutions
-          that will help them grow and retain more clients.
-        </p>
-      </div>
-      </div>
-
-      <div class="flex flex-row gap-x-4 justify-center my-12">
-  <a href="https://x.com/clarkjr2016" target="_blank">
-    <i class="fab fa-twitter text-4xl"></i>
-  </a>
-  <a href="https://github.com/clarkjr2016?tab=overview&from=2025-08-01&to=2025-08-26" target="_blank">
-    <i class="fab fa-github text-4xl"></i>
-  </a>
-  <a href="https://www.instagram.com/eugeneclarkjr/" target="_blank">
-    <i class="fab fa-instagram text-4xl"></i>
-  </a>
-</div>
-     
-    </section>
-
-     
-        
-    
-  </body>
+					<p class="max-w-sm min-w-72">
+						I'm a Web Developer with a strong passion to help other businesses
+						reach their target audience. I seek to provide the digital solutions
+						that will help them grow and retain more clients.
+					</p>
+				</div>
+				<div class="flex flex-row gap-x-4 justify-start my-12">
+					<a href="https://x.com/clarkjr2016" target="_blank">
+						<i class="fab fa-twitter text-4xl"></i>
+					</a>
+					<a
+						href="https://github.com/clarkjr2016?tab=overview&from=2025-08-01&to=2025-08-26"
+						target="_blank"
+					>
+						<i class="fab fa-github text-4xl"></i>
+					</a>
+					<a href="https://www.instagram.com/eugeneclarkjr/" target="_blank">
+						<i class="fab fa-instagram text-4xl"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
